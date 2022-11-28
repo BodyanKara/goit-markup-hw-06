@@ -21,22 +21,33 @@
                     <use href="./images/basic/symbol-defs.svg#close-btn"></use>
                 </svg>
             </button>
-            <form action="">
+            <form action="" class="form">
+                <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
 
-                <label for="name">Ім'я</label>
-                <input type="text" name="user-name" id="name">
+                <div class="form-group">
+                    <label for="name">Ім'я</label>
+                    <input type="text" name="user-name" id="name">
+                </div>
 
-                <label for="phone">Телефон</label>
-                <input type="tel" name="phone-number" id="phone">
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" name="phone-number" id="phone">
+                </div>
 
-                <label for="mail">Пошта</label>
-                <input type="email" name="mail" id="mail">
+                <div class="form-group">
+                    <label for="mail">Пошта</label>
+                    <input type="email" name="mail" id="mail">
+                </div>
 
-                <label for="">Коментар</label>
-                <input type="text">
+                <div class="form-group">
+                    <label for="comment">Коментар</label>
+                    <textarea name="comment" id="comment" rows="8" placeholder="Введіть текст"></textarea>
+                </div>
 
-                <input type="checkbox" name="conditions" id="conditions">
-                <label for="conditions">Погоджуюся з розсилкою та приймаю <a href="" class="link">Умови договору</a></label>
+                <div class="form-group">
+                    <input type="checkbox" name="conditions" id="conditions" value="agreement">
+                    <label for="conditions">Погоджуюся з розсилкою та приймаю <a href="" class="link">Умови договору</a></label>
+                </div>
 
                 <button type="submit">Відправити</button>
             </form>
