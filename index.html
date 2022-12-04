@@ -28,7 +28,7 @@
                     
                     <input type="text" name="user-name" id="name" class="form-input" placeholder=" ">
                     <svg class="form-icon" width="18" height="18">
-                        <use href="./images/basic/symbol-defs.svg#form-user"></use>
+                        <use href="./images/basic/icons.svg#form-user"></use>
                     </svg>
                     <label for="name" class="form-label">Ім'я</label>
                 </div>
@@ -37,7 +37,7 @@
                     
                     <input type="tel" name="phone-number" id="phone" class="form-input" placeholder=" ">
                     <svg class="form-icon" width="18" height="18">
-                        <use href="./images/basic/symbol-defs.svg#form-phone"></use>
+                        <use href="./images/basic/icons.svg#form-phone"></use>
                     </svg>
                     <label for="phone" class="form-label">Телефон</label>
                 </div>
@@ -46,7 +46,7 @@
                     
                     <input type="email" name="mail" id="mail" class="form-input" placeholder=" ">
                     <svg class="form-icon" width="18" height="18">
-                        <use href="./images/basic/symbol-defs.svg#form-mail"></use>
+                        <use href="./images/basic/icons.svg#form-mail"></use>
                     </svg>
                     <label for="mail" class="form-label">Пошта</label>
                 </div>
@@ -58,11 +58,15 @@
                 </div>
 
                 <div class="form-group checkbox-group">
-                    <input type="checkbox" name="conditions" id="conditions" value="agreement" class="form-input-checkbox">
-                    <label for="conditions" class="form-label-checkbox">Погоджуюся з розсилкою та приймаю <a href="" class="link">Умови договору</a></label>
+                    <label for="conditions" class="form-label-checkbox">
+                        <input type="checkbox" name="conditions" id="conditions" value="agreement" class="form-input-checkbox">
+                        <svg class="icon-check" width="16" height="15">
+                            <use href="./images/basic/icons.svg#icon-check"></use>
+                        </svg>Погоджуюся з розсилкою та приймаю <a href="" class="link">Умови договору</a>
+                    </label>
                 </div>
 
-                <button type="submit">Відправити</button>
+                <button type="submit" class="submit">Відправити</button>
             </form>
         </div>
     </div>
