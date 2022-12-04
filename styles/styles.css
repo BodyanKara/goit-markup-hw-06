@@ -124,10 +124,13 @@ img{
     border-radius: 50%;
     width: 30px;
     height: 30px;
-
 }
 .close-btn .icon{
     fill: currentColor;
+}
+.close-btn:hover,
+.close-btn:focus{
+    color: var(--accent-color);
 }
 .form{
     height: 100%;
@@ -155,6 +158,7 @@ img{
     flex-direction: column;
     margin-bottom: 28px;
 }
+
 .form-input{
     height: 40px;
 }
@@ -196,15 +200,14 @@ img{
     color: var(--accent-color);
 
 }
+
 .form-input-checkbox{
-    position: relative;
+    display: inline-block;
+    justify-content: flex-start;
     width: 16px;
     height: 15px;
 }
-.form-label-checkbox{
-    position: absolute;
-    left: 20px;
-}
+
 .form .link{
     color: var(--accent-color);
 }
