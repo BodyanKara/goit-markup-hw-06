@@ -161,10 +161,21 @@ img{
 
 .form-input{
     height: 40px;
+    border: 1px solid rgba(33, 33, 33, 20%);
+        border-radius: 4px;
+}
+.form-input-comment{
+    border: 1px solid rgba(33, 33, 33, 20%);
+        border-radius: 4px;
+}
+.form-input:focus,
+.form-input-comment:focus{
+    outline-color:var(--accent-color) ;
 }
 
 .form-icon{
     position: absolute;
+    display: inline-block;
     margin: 11px 12px;
     fill: var(--secondary-text-color);
     transition: fill 250ms var(--time-animation);
