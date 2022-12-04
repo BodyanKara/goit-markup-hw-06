@@ -228,7 +228,7 @@ img{
     display: inline-block;
     position: relative;
     font-size: 14px;
-    line-height: 1.71
+    line-height: 1.71;
     letter-spacing: 0.03em;
 }
 .form-input-checkbox{
@@ -239,7 +239,7 @@ img{
 .icon-check{
     position: absolute;
     top: 10px;
-    left: 30px;
+    left: 20px;
     transform: translateY(-50%);
     border: 2px solid rgba(33, 33, 33, 1);
     border-radius: 2px;
