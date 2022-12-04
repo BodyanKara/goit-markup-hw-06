@@ -139,7 +139,7 @@ img{
         line-height: 1.17;
 }
 .form-title{
-    margin-bottom: 12px;
+    margin-bottom: 30px;
 
     font-weight: 700;
         font-size: 20px;
@@ -150,12 +150,60 @@ img{
         color: #212121;
 }
 .form-group{
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
 }
-.form-group label{
-    margin-bottom: 4px;
+.form-input{
+    height: 40px;
+}
+
+.form-icon{
+    position: absolute;
+    margin: 11px 12px;
+    fill: var(--secondary-text-color);
+    transition: fill 250ms var(--time-animation);
+}
+.form-label{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    transition: transform 250ms var(--time-animation), color 250ms var(--time-animation);
+}
+.form-label-comment{
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: transform 250ms var(--time-animation), color 250ms var(--time-animation);
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label{
+    transform: translate(-30px,-35px);
+    color: var(--accent-color);
+    
+}
+.form-input:focus ~ .form-icon{
+    fill: var(--accent-color);
+
+}
+.form-input-comment:focus ~ .form-label-comment,
+.form-input-comment:not(:placeholder-shown)~.form-label-comment{
+    transform: translate(-17px, -27px);
+    color: var(--accent-color);
+
+}
+.form-input-checkbox{
+    position: relative;
+    width: 16px;
+    height: 15px;
+}
+.form-label-checkbox{
+    position: absolute;
+    left: 20px;
 }
 .form .link{
     color: var(--accent-color);
