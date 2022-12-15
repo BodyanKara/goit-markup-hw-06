@@ -689,7 +689,7 @@ color: var(--secondary-text-color);
     fill: currentColor;
 }
 .footer-form{
-    margin-left: 93px;
+    margin-left: auto;
     width: 570px;
 }
 
